@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>캐릭터 생성</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <div class="member-create-container">
+      <h2>⭐ 캐릭터 추가</h2>
+      <br />
+      <hr />
+      <div class="loading" style="display: none">
+        <div class="spinner"></div>
+        로딩 중...
+      </div>
+
+      <div class="member-create-list">
+        <input type="file" id="member-image" class="member-image" /><br />
+        <img
+          id="image-preview"
+          style="width: 200px; height: 200px; margin-top: 10px; display: none"
+        />
+        <input
+          type="text"
+          id="member-name"
+          class="member-name"
+          placeholder="이름"
+        /><br />
+        <input
+          type="text"
+          id="member-country"
+          class="member-country"
+          placeholder="국적"
+        /><br />
+        <input
+          type="text"
+          id="member-birth"
+          class="member-birth"
+          placeholder="생년월일(ex.2023.01.01)"
+        /><br />
+        <input
+          type="text"
+          id="member-creator"
+          class="member-creator"
+          placeholder="제작"
+        /><br />
+        <div class="red">사진과 정보 모두 필수로 등록해주세요.</div>
+        <button type="submit" class="return-button">돌아가기</button>
+        <button type="submit" class="create-button">캐릭터 등록</button>
+      </div>
+      <hr />
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+    <script src="../js/firebaseInit.js"></script>
+    <script src="../js/create.js"></script>
+  </body>
+</html>

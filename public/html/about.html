@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>캐릭터 상세</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <div class="member-list-container">
+      <h2>⭐ 캐릭터 정보</h2>
+      <br />
+      <hr />
+      <div class="character-info">
+        <div>
+        <img class="profile-image-size" id="charImage" />
+       <div><strong id="charName"></strong></div> </div>
+        <div id="charBirth"></div>/
+        <div id="charCountry"></div>/
+        <div id="charCreator"></div>
+        <button class="return-button">돌아가기</button>
+        <button class="edit-button">정보 수정</button>
+      </div>
+     
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+    <script src="../js/firebaseInit.js"></script>
+    <script src="../js/about.js"></script>
+  </body>
+</html>
